@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/ProcesdrsArqitecra/Procesador1/test_nPc_isim_beh.exe" -prj "D:/ProcesdrsArqitecra/Procesador1/test_nPc_beh.prj" "work.test_nPc" 

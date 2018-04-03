@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Nueva carpeta/Procesador1/nPc.xst" -ofn "D:/Nueva carpeta/Procesador1/nPc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 "nPc.ngc" nPc.ngd  
+map -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o nPc_map.ncd nPc.ngd nPc.pcf 
+par -w -intstyle ise -ol high -t 1 nPc_map.ncd nPc.ncd nPc.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml nPc.twx nPc.ncd -o nPc.twr nPc.pcf 

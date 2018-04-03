@@ -1,0 +1,6 @@
+V3 3
+FL "D:/Nueva carpeta/Procesador1/nPc.vhd" 2018/04/02.19:54:45 P.20131013
+EN work/nPc 1522773437 FL "D:/Nueva carpeta/Procesador1/nPc.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/nPc/Behavioral 1522773438 \
+      FL "D:/Nueva carpeta/Procesador1/nPc.vhd" EN work/nPc 1522773437
