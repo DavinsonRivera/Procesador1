@@ -1,0 +1,6 @@
+[Inputs]
+=EntradaSumador[31:0]=
+=Inicio[31:0]=
+[Outputs]
+=SalidaSumador[31:0]=
+[BiDir]

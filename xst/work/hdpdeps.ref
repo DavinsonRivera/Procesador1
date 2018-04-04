@@ -1,4 +1,12 @@
-V3 3
+V3 6
+FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd 2018/04/03.19:25:57 P.20131013
+EN work/Sumador 1522803384 \
+      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sumador/Behavioral 1522803385 \
+      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd \
+      EN work/Sumador 1522803384
 FL "D:/Nueva carpeta/Procesador1/nPc.vhd" 2018/04/02.19:54:45 P.20131013
 EN work/nPc 1522773437 FL "D:/Nueva carpeta/Procesador1/nPc.vhd" \
       PB ieee/std_logic_1164 1381692176

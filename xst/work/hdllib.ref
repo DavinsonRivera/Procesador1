@@ -1,2 +1,4 @@
 AR npc behavioral "D:/Nueva carpeta/Procesador1/nPc.vhd" sub00/vhpl01 1522773438
+AR sumador behavioral C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd sub00/vhpl03 1522803385
 EN npc NULL "D:/Nueva carpeta/Procesador1/nPc.vhd" sub00/vhpl00 1522773437
+EN sumador NULL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd sub00/vhpl02 1522803384

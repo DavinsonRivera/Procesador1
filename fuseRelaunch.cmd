@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/ProcesdrsArqitecra/Procesador1/test_nPc_isim_beh.exe" -prj "D:/ProcesdrsArqitecra/Procesador1/test_nPc_beh.prj" "work.test_nPc" 
+-intstyle "ise" -incremental -o "C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/testSumador_isim_beh.exe" -prj "C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/testSumador_beh.prj" "work.testSumador" 

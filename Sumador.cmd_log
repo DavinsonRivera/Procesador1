@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Sumador.vhd -prj Procesador1 -o Sumador.spl -module Sumador -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Sumador.spl C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.sym 
+xst -intstyle ise -ifn "C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.xst" -ofn "C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.syr" 

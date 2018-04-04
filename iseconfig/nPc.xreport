@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-03T14:49:18</DateModified>
+  <DateModified>2018-04-03T18:40:39</DateModified>
   <ModuleName>nPc</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/ProcesdrsArqitecra/Procesador1/iseconfig/nPc.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProcesdrsArqitecra/Procesador1\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/iseconfig/nPc.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-02T19:35:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
