@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Davinson/Downloads/Procesador1-master/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Davinson/Downloads/Procesador1-master/xst"
+elaborate
+-ifn Alu.prj
+-ifmt mixed

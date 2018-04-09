@@ -1,14 +1,41 @@
-V3 6
-FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd 2018/04/03.19:25:57 P.20131013
-EN work/Sumador 1522803384 \
-      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd \
+V3 20
+FL C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd 2018/04/09.13:35:22 P.20131013
+EN work/Alu 1523298947 FL C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Sumador/Behavioral 1522803385 \
-      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd \
-      EN work/Sumador 1522803384
-FL "D:/Nueva carpeta/Procesador1/nPc.vhd" 2018/04/02.19:54:45 P.20131013
-EN work/nPc 1522773437 FL "D:/Nueva carpeta/Procesador1/nPc.vhd" \
+AR work/Alu/Behavioral 1523298948 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd EN work/Alu 1523298947
+FL C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd 2018/04/03.18:17:52 P.20131013
+EN work/nPc 1523304965 FL C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/nPc/Behavioral 1522773438 \
-      FL "D:/Nueva carpeta/Procesador1/nPc.vhd" EN work/nPc 1522773437
+AR work/nPc/Behavioral 1523304966 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd EN work/nPc 1523304965
+FL C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd 2018/04/09.15:19:55 P.20131013
+EN work/Pc 1523305204 FL C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Pc/Behavioral 1523305205 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd EN work/Pc 1523305204
+FL C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd 2018/04/03.18:17:52 P.20131013
+EN work/Sumador 1523303082 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sumador/Behavioral 1523303083 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd \
+      EN work/Sumador 1523303082
+FL C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd 2018/04/09.12:23:14 P.20131013
+EN work/UniCntrl 1523294600 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UniCntrl/Behavioral 1523294601 \
+      FL C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd \
+      EN work/UniCntrl 1523294600
+FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd 2018/04/06.18:00:06 P.20131013
+EN work/RegF 1523291036 \
+      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RegF/Behavioral 1523291037 \
+      FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd \
+      EN work/RegF 1523291036
+FL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd 2018/04/03.19:25:57 P.20131013
+FL "D:/Nueva carpeta/Procesador1/nPc.vhd" 2018/04/02.19:54:45 P.20131013

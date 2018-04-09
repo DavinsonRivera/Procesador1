@@ -1,4 +1,12 @@
-AR npc behavioral "D:/Nueva carpeta/Procesador1/nPc.vhd" sub00/vhpl01 1522773438
-AR sumador behavioral C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd sub00/vhpl03 1522803385
-EN npc NULL "D:/Nueva carpeta/Procesador1/nPc.vhd" sub00/vhpl00 1522773437
-EN sumador NULL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/Sumador.vhd sub00/vhpl02 1522803384
+EN regf NULL C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd sub00/vhpl04 1523291036
+AR npc behavioral C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd sub00/vhpl01 1523304966
+AR sumador behavioral C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd sub00/vhpl03 1523303083
+EN pc NULL C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd sub00/vhpl10 1523305204
+AR unicntrl behavioral C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd sub00/vhpl07 1523294601
+EN npc NULL C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd sub00/vhpl00 1523304965
+EN unicntrl NULL C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd sub00/vhpl06 1523294600
+AR alu behavioral C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd sub00/vhpl09 1523298948
+AR regf behavioral C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd sub00/vhpl05 1523291037
+AR pc behavioral C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd sub00/vhpl11 1523305205
+EN sumador NULL C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd sub00/vhpl02 1523303082
+EN alu NULL C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd sub00/vhpl08 1523298947

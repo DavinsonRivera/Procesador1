@@ -1,0 +1,2 @@
+vhdl isim_temp "UniCntrl.vhd"
+vhdl isim_temp "testUniCtrl.vhd"
