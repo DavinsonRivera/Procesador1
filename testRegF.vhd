@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   11:28:09 04/09/2018
+-- Create Date:   19:24:11 04/09/2018
 -- Design Name:   
 -- Module Name:   C:/Users/Davinson/Downloads/Procesador1-master/testRegF.vhd
 -- Project Name:  Procesador1
@@ -47,7 +47,8 @@ ARCHITECTURE behavior OF testRegF IS
          reset : IN  std_logic;
          DatOutAlu : IN  std_logic_vector(31 downto 0);
          Out1 : OUT  std_logic_vector(31 downto 0);
-         Out2 : OUT  std_logic_vector(31 downto 0)
+         Out2 : OUT  std_logic_vector(31 downto 0);
+         Out3 : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -62,10 +63,11 @@ ARCHITECTURE behavior OF testRegF IS
  	--Outputs
    signal Out1 : std_logic_vector(31 downto 0);
    signal Out2 : std_logic_vector(31 downto 0);
+   signal Out3 : std_logic_vector(31 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
- 
+    
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -76,21 +78,24 @@ BEGIN
           reset => reset,
           DatOutAlu => DatOutAlu,
           Out1 => Out1,
-          Out2 => Out2
+          Out2 => Out2,
+          Out3 => Out3
         );
 
- 
+    
 
    -- Stimulus process
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-       InReg1 <= "00100";
-       InReg2 <= "10000";
-	  	 RegD   <= "00000";
-       reset  <= '0';
-       DatOutAlu <= x"00000003";
-       wait for 100 ns;	
+		reset <= '0';
+		InReg1 <= "10000";
+      InReg2 <= "10001";
+      RegD <= "00001";
+      DatOutAlu <= x"00000003";
+      wait for 100 ns;	
+
+      
 
       wait;
    end process;

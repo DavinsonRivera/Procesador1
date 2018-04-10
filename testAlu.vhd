@@ -59,8 +59,7 @@ ARCHITECTURE behavior OF testAlu IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
- 
+    
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -71,25 +70,28 @@ BEGIN
           OutDatRF => OutDatRF
         );
 
-   -- Clock process definitions
-   <clock>_process :process
-   begin
-		<clock> <= '0';
-		wait for <clock>_period/2;
-		<clock> <= '1';
-		wait for <clock>_period/2;
-   end process;
  
 
    -- Stimulus process
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
+		
+		InDat1 <= x"00000004";
+      InDat2 <= x"00000002";
+      InInstrcUC <= "000000";
+      wait for 100 ns;	
+		InDat1 <= x"00000007";
+      InDat2 <= x"00000005";
+      InInstrcUC <= "000001";
+      wait for 100 ns;	
+		InDat1 <= x"00000003";
+      InDat2 <= x"00000004";
+      InInstrcUC <= "000010";
       wait for 100 ns;	
 
-      wait for <clock>_period*10;
+      
 
-      -- insert stimulus here 
 
       wait;
    end process;

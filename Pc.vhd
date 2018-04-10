@@ -32,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Pc is
     Port ( InPc : in  STD_LOGIC_VECTOR (31 downto 0);
            OutPc : out  STD_LOGIC_VECTOR (31 downto 0);
+			  reset : in  STD_LOGIC;
            clk : in  STD_LOGIC);
 end Pc;
 
@@ -39,12 +40,16 @@ architecture Behavioral of Pc is
 
 begin
 
-   process (InPc, clk)
+    process (InPc, reset, clk)
    begin
+     if(reset = '1')then
+	    OutPc <= "00000000000000000000000000000000";
+		else
         if(rising_edge(clk))then
 		    OutPc <= InPc;
 		  end if;
+	  end if;
+end process;
 
-   end process;
 end Behavioral;
 
