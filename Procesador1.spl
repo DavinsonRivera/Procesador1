@@ -1,0 +1,6 @@
+[Inputs]
+reset
+clk
+[Outputs]
+=OutProcesador[31:0]=
+[BiDir]

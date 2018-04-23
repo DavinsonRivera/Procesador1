@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Davinson/Downloads/Procesador1-master/testAlu_isim_beh.exe" -prj "C:/Users/Davinson/Downloads/Procesador1-master/testAlu_beh.prj" "work.testAlu" 
+-intstyle "ise" -incremental -o "C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1_isim_beh.exe" -prj "C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1_beh.prj" "work.testProcesador1" 

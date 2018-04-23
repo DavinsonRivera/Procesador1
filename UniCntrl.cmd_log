@@ -1,0 +1,1 @@
+vhdtdtfi -prj Procesador1 -o C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhi -module UniCntrl -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UniCntrl.vhd 

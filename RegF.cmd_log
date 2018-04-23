@@ -1,0 +1,1 @@
+vhdtdtfi -prj Procesador1 -o C:/Users/Davinson/Downloads/Procesador1-master/RegF.vhi -module RegF -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd 
