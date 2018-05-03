@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-19T18:52:30</DateModified>
+  <DateModified>2018-05-03T11:45:37</DateModified>
   <ModuleName>Procesador1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Davinson/Downloads/Procesador1-master/iseconfig/Procesador1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Davinson/Downloads/Procesador1-master</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Davinson/Downloads/Procesador1-master\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-19T18:52:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
