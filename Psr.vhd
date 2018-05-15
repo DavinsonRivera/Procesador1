@@ -33,27 +33,27 @@ entity Psr is
     Port ( nzvc : in  STD_LOGIC_VECTOR (3 downto 0);
            C : out  STD_LOGIC;
            clk : in  STD_LOGIC;
+			  CwpIn: in STD_LOGIC_VECTOR (1 downto 0);
+			  CwpOut: out STD_LOGIC_VECTOR (1 downto 0);
            reset : in  STD_LOGIC);
 end Psr;
 
 architecture Behavioral of Psr is
 
 begin
-
-    process(reset, clk, nzvc)
-        begin
-        
-            if (reset= '1') then         
-                 C <= '0';
-                 
-            else
-                if (rising_edge(clk)) then
-                    C <= nzvc(0);
-                
-                end if;
-            end if;
-    end process;
+process(reset,nzvc,CwpIn)
+begin
+   if(reset='1')then
+		
+		C <= '0';
+	else
+		if(rising_edge(clk))then
+			C <= nzvc(0);
+		end if;
+	end if;
+end process;
    
+CwpOut <= CwpIn;
 
 end Behavioral;
 

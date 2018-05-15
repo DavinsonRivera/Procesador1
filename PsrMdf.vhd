@@ -40,41 +40,47 @@ end PsrMdf;
 architecture Behavioral of PsrMdf is
 
 begin
-    process (RegfOut, Mpx, AluOut, UcOut)
-        begin
---ADDcc
---ADDxcc
-               if UcOut = "000010" or UcOut = "011000" then
-                   nzvc(3) <= AluOut(31);
-                   if AluOut = x"0000000" then 
-                       nzvc(2) <= '1';
-                   else
-                       nzvc(2) <= '0';
-                   end if;
-                   nzvc(1) <=    (RegfOut(31) and Mpx(31) and (not AluOut(31)))
-						            or ((not RegfOut(31)) and (not Mpx(31)) and AluOut(31));
-										
-                   nzvc(0) <=    (RegfOut(31) and Mpx(31))
-						            or ((not AluOut(31)) and (RegfOut(31) or Mpx(31)));
-               end if;
-                
---SUBcc
---SUBxcc
-               if UcOut = "000101" or UcOut = "000110" then
-                   nzvc(3) <= AluOut(31);
-                   if AluOut = x"00000000" then 
-                       nzvc(2) <= '1';
-                   else
-                       nzvc(2) <= '0';
-                   end if;
-                   nzvc(1) <=    (RegfOut(31) and (not Mpx(31)) and (not AluOut(31))) 
-						            or ((not RegfOut(31)) and Mpx(31) and AluOut(31));
-                   
-						 nzvc(0) <=    ((not RegfOut(31)) and Mpx(31)) 
-						            or (AluOut(31) and ((not RegfOut(31)) or Mpx(31)));
-               end if;
-                
-    end process;
+process(Mpx,RegfOut,UcOut,AluOut)
+begin
+
+-------------------SUMA------------------------
+	if(UcOut="001000" or UcOut="001010")then
+		nzvc(3)<=AluOut(31); 
+      if(AluOut=x"00000000")then
+			nzvc(2)<='1';
+		else
+			nzvc(2)<='0';
+		end if;
+		nzvc(1)<=(RegfOut(31) and Mpx(31) and (not AluOut(31))) or((not RegfOut(31)) and (not Mpx(31)) and AluOut(31));
+		nzvc(0)<=(RegfOut(31) and Mpx(31)) or (not(AluOut(31)) and (RegfOut(31) or Mpx(31)));
+	end if;
+	
+------------------RESTA------------------------
+	if(UcOut="001011" or UcOut="001101")then
+		nzvc(3)<=AluOut(31);
+		if(AluOut=x"00000000")then
+			nzvc(2)<='1';
+		else
+			nzvc(2)<='0';
+		end if;
+		nzvc(1)<=(RegfOut(31) and (not Mpx(31)) and (not AluOut(31))) or((not RegfOut(31)) and Mpx(31) and AluOut(31));
+		nzvc(0)<=((not RegfOut(31)) and Mpx(31)) or(AluOut(31) and ((not RegfOut(31)) or Mpx(31))); 
+	end if;
+----------------ANDcc,ORcc----------------------
+	if ((UcOut="001110") or (UcOut="001111") or (UcOut="010000") or (UcOut="010001") or (UcOut="010010") or (UcOut="010011")) then
+		nzvc(3) <= AluOut(31);
+		if (AluOut = x"00000000") then
+			nzvc(2) <= '1';
+		else
+			nzvc(2) <= '0';
+		end if;
+		nzvc(1) <= '0';
+		nzvc(0) <= '0';
+	end if;
+		
+		
+end process;
+
 
 
 end Behavioral;

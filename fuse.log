@@ -1,19 +1,22 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1_isim_beh.exe -prj C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1_beh.prj work.testProcesador1 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect_isim_beh.exe -prj C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect_beh.prj work.testProcesconect 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/../../Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/RegF.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/../../Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/InstructionMemory.vhd" into library work
+Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/WinMangr.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/UniCntrl.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/UndExt.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/Sumador.vhd" into library work
+Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/PsrMdf.vhd" into library work
+Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/Psr.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/Pc.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/MuPlx.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/Alu.vhd" into library work
 Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/Procesador1.vhd" into library work
-Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1.vhd" into library work
+Parsing VHDL file "C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -31,11 +34,14 @@ Compiling architecture behavioral of entity RegF [regf_default]
 Compiling architecture behavioral of entity MuPlx [muplx_default]
 Compiling architecture behavioral of entity UndExt [undext_default]
 Compiling architecture behavioral of entity Alu [alu_default]
+Compiling architecture behavioral of entity PsrMdf [psrmdf_default]
+Compiling architecture behavioral of entity Psr [psr_default]
+Compiling architecture behavioral of entity WinMangr [winmangr_default]
 Compiling architecture behavioral of entity Procesador1 [procesador1_default]
-Compiling architecture behavior of entity testprocesador1
+Compiling architecture behavior of entity testprocesconect
 Time Resolution for simulation is 1ps.
-Waiting for 9 sub-compilation(s) to finish...
-Compiled 27 VHDL Units
-Built simulation executable C:/Users/Davinson/Downloads/Procesador1-master/testProcesador1_isim_beh.exe
-Fuse Memory Usage: 37128 KB
-Fuse CPU Usage: 577 ms
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 33 VHDL Units
+Built simulation executable C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect_isim_beh.exe
+Fuse Memory Usage: 37464 KB
+Fuse CPU Usage: 640 ms
