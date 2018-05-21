@@ -40,9 +40,8 @@ end PsrMdf;
 architecture Behavioral of PsrMdf is
 
 begin
-process(Mpx,RegfOut,UcOut,AluOut)
-begin
-
+    process (RegfOut, Mpx, AluOut, UcOut)
+        begin
 -------------------SUMA------------------------
 	if(UcOut="001000" or UcOut="001010")then
 		nzvc(3)<=AluOut(31); 
@@ -77,10 +76,8 @@ begin
 		nzvc(1) <= '0';
 		nzvc(0) <= '0';
 	end if;
-		
-		
-end process;
-
+                
+    end process;
 
 
 end Behavioral;

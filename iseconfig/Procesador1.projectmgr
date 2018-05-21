@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Inst_InstructionMemory - InstructionMemory - Behavioral (C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/InstructionMemory.vhd)</SelectedItem>
+         <SelectedItem>Inst_PsrMdf - PsrMdf - Behavioral (C:/Users/Davinson/Downloads/Procesador1Psr/PsrMdf.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000211000000020000000000000000000000000200000064ffffffff000000810000000300000002000002110000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Inst_InstructionMemory - InstructionMemory - Behavioral (C:/Users/Davinson/Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesador1/InstructionMemory.vhd)</CurrentItem>
+      <CurrentItem>Inst_PsrMdf - PsrMdf - Behavioral (C:/Users/Davinson/Downloads/Procesador1Psr/PsrMdf.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -27,7 +27,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -75,23 +75,31 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Procesador1 - Behavioral C:|Users|Davinson|Downloads|Procesador1-master|Procesador1.vhd</ClosedNode>
          <ClosedNode>/testAlu - behavior C:|Users|Davinson|Downloads|Procesador1-master|testAlu.vhd</ClosedNode>
+         <ClosedNode>/testAlu - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testAlu.vhd</ClosedNode>
          <ClosedNode>/testInstMem - behavior C:|Users|Davinson|Downloads|Procesador1-master|testInstMem.vhd</ClosedNode>
+         <ClosedNode>/testInstMem - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testInstMem.vhd</ClosedNode>
          <ClosedNode>/testMpx - behavior C:|Users|Davinson|Downloads|Procesador1-master|testMpx.vhd</ClosedNode>
+         <ClosedNode>/testMpx - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testMpx.vhd</ClosedNode>
          <ClosedNode>/testRegF - behavior C:|Users|Davinson|Downloads|Procesador1-master|testRegF.vhd</ClosedNode>
+         <ClosedNode>/testRegF - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testRegF.vhd</ClosedNode>
          <ClosedNode>/testSumador - behavior C:|Users|Davinson|Downloads|Procesador1-master|testSumador.vhd</ClosedNode>
+         <ClosedNode>/testSumador - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testSumador.vhd</ClosedNode>
          <ClosedNode>/testUndExt - behavior C:|Users|Davinson|Downloads|Procesador1-master|testUndExt.vhd</ClosedNode>
+         <ClosedNode>/testUndExt - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testUndExt.vhd</ClosedNode>
          <ClosedNode>/testUniCtrl - behavior C:|Users|Davinson|Downloads|Procesador1-master|testUniCtrl.vhd</ClosedNode>
+         <ClosedNode>/testUniCtrl - behavior C:|Users|Davinson|Downloads|Procesador1Psr|testUniCtrl.vhd</ClosedNode>
          <ClosedNode>/test_nPc - behavior C:|Users|Davinson|Downloads|Procesador1-master|test_nPc.vhd</ClosedNode>
+         <ClosedNode>/test_nPc - behavior C:|Users|Davinson|Downloads|Procesador1Psr|test_nPc.vhd</ClosedNode>
          <ClosedNode>/test_nPc - behavior D:|Nueva carpeta|Procesador1|test_nPc.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>testProcesconect - behavior (C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect.vhd)</SelectedItem>
+         <SelectedItem>testProcesador1 - behavior (C:/Users/Davinson/Downloads/Procesador1Psr/testProcesador1.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000225000000020000000000000000000000000200000064ffffffff000000810000000300000002000002250000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>testProcesconect - behavior (C:/Users/Davinson/Downloads/Procesador1-master/testProcesconect.vhd)</CurrentItem>
+      <CurrentItem>testProcesador1 - behavior (C:/Users/Davinson/Downloads/Procesador1Psr/testProcesador1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -121,5 +129,5 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

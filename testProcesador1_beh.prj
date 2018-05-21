@@ -3,6 +3,8 @@ vhdl work "../../Dropbox/Documentos/UTP/arquitectura/ProcesdrsArqitecra/Procesad
 vhdl work "UniCntrl.vhd"
 vhdl work "UndExt.vhd"
 vhdl work "Sumador.vhd"
+vhdl work "PsrMdf.vhd"
+vhdl work "Psr.vhd"
 vhdl work "Pc.vhd"
 vhdl work "nPc.vhd"
 vhdl work "MuPlx.vhd"

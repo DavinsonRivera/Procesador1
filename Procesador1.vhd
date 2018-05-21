@@ -81,9 +81,9 @@ COMPONENT UniCntrl
 
 COMPONENT RegF
 	PORT(
-		InReg1 : IN std_logic_vector(5 downto 0);
-		InReg2 : IN std_logic_vector(5 downto 0);
-		RegD : IN std_logic_vector(5 downto 0);
+		InReg1 : IN std_logic_vector(4 downto 0);
+		InReg2 : IN std_logic_vector(4 downto 0);
+		RegD : IN std_logic_vector(4 downto 0);
 		reset : IN std_logic;
 		DatOutAlu : IN std_logic_vector(31 downto 0);          
 		Out1 : OUT std_logic_vector(31 downto 0);
@@ -112,7 +112,7 @@ COMPONENT Alu
 		InDat1 : IN std_logic_vector(31 downto 0);
 		InDat2 : IN std_logic_vector(31 downto 0);
 		InInstrcUC : IN std_logic_vector(5 downto 0); 
-      c : IN STD_LOGIC;		
+		C : in STD_LOGIC;
 		OutDatRF : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
@@ -125,39 +125,21 @@ COMPONENT PsrMdf
 		UcOut : IN std_logic_vector(5 downto 0);          
 		nzvc : OUT std_logic_vector(3 downto 0)
 		);
-	END COMPONENT;	
+	END COMPONENT;
 	
 COMPONENT Psr
 	PORT(
 		nzvc : IN std_logic_vector(3 downto 0);
 		clk : IN std_logic;
-		reset : IN std_logic; 
-      CwpIn : IN std_logic_vector(1 downto 0);          
-		CwpOut : OUT std_logic_vector(1 downto 0);		
+		reset : IN std_logic;          
 		C : OUT std_logic
 		);
 	END COMPONENT;
-	
-COMPONENT WinMangr
-	PORT(
-		Op : IN std_logic_vector(1 downto 0);
-		Op3 : IN std_logic_vector(5 downto 0);
-		RegF1In : IN std_logic_vector(4 downto 0);
-		RegF2In : IN std_logic_vector(4 downto 0);
-		RegDIn : IN std_logic_vector(4 downto 0);
-		CwpIn : IN std_logic_vector(1 downto 0);          
-		CwpOut : OUT std_logic_vector(1 downto 0);
-		RegF1Out : OUT std_logic_vector(5 downto 0);
-		RegF2Out : OUT std_logic_vector(5 downto 0);
-		RegDOut : OUT std_logic_vector(5 downto 0)
-		);
-	END COMPONENT;	
 
 signal SumadorToNpc, NpcToPc, PcToInstMem, ImToUc_Rf_Ue, AluToRf, RfToAlu, RfToMpx, UndExtToMpx, MpxToAlu :  STD_LOGIC_VECTOR (31 downto 0);
-signal UcToAlu, WnMgToRgF1, WnMgToRgF2, WnMgToRgD : STD_LOGIC_VECTOR (5 downto 0);
-signal PsrToAlu: std_logic;
-signal PsrToWnMg, WnMgToPsr : STD_LOGIC_VECTOR (1 downto 0);
-SIGNAL psrmodifier_psr: STD_LOGIC_VECTOR (3 downto 0);
+signal UcToAlu : STD_LOGIC_VECTOR (5 downto 0);
+signal PsrMdfToPsr  : STD_LOGIC_VECTOR (3 downto 0);
+signal PsrToAlu : STD_LOGIC;
 
 begin
 
@@ -194,9 +176,9 @@ Inst_UniCntrl: UniCntrl PORT MAP(
 	);	
 
 Inst_RegF: RegF PORT MAP(
-		InReg1 => WnMgToRgF1,
-		InReg2 => WnMgToRgF2,
-		RegD => WnMgToRgD,
+		InReg1 => ImToUc_Rf_Ue(18 downto 14),
+		InReg2 => ImToUc_Rf_Ue(4 downto 0),
+		RegD => ImToUc_Rf_Ue(29 downto 25),
 		reset => reset,
 		DatOutAlu => AluToRf,
 		Out1 => RfToAlu,
@@ -219,8 +201,8 @@ Inst_Alu: Alu PORT MAP(
 		InDat1 => RfToAlu,
 		InDat2 => MpxToAlu,
 		InInstrcUC => UcToAlu,
-		OutDatRF => AluToRf,
-		C => PsrToAlu
+		c => PsrToAlu,
+		OutDatRF => AluToRf
 	);
 	
 Inst_PsrMdf: PsrMdf PORT MAP(
@@ -228,29 +210,14 @@ Inst_PsrMdf: PsrMdf PORT MAP(
 		Mpx => MpxToAlu,
 		AluOut => AluToRf,
 		UcOut => UcToAlu,
-		nzvc => psrmodifier_psr
+		nzvc => PsrMdfToPsr
 	);	
 	
 Inst_Psr: Psr PORT MAP(
-		nzvc => psrmodifier_psr,
+		nzvc => PsrMdfToPsr,
 		C => PsrToAlu,
 		clk => clk,
-		CwpIn => WnMgToPsr,
-		CwpOut => PsrToWnMg,
 		reset => reset
-	);	
-	
-Inst_WinMangr: WinMangr PORT MAP(
-		Op => ImToUc_Rf_Ue(31 downto 30),
-		Op3 => ImToUc_Rf_Ue(24 downto 19),
-		RegF1In => ImToUc_Rf_Ue(18 downto 14),
-		RegF2In => ImToUc_Rf_Ue(4 downto 0),
-		RegDIn => ImToUc_Rf_Ue(29 downto 25),
-		CwpIn => PsrToWnMg,
-		CwpOut => WnMgToPsr,
-		RegF1Out => WnMgToRgF1,
-		RegF2Out => WnMgToRgF2,
-		RegDOut => WnMgToRgD
 	);	
 
 OutProcesador <= AluToRf;	

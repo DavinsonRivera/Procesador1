@@ -1,1 +1,1 @@
-vhdtdtfi -prj Procesador1 -o C:/Users/Davinson/Downloads/Procesador1-master/Psr.vhi -module Psr -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Psr.vhd 
+vhdtdtfi -prj Procesador1 -o C:/Users/Davinson/Downloads/Procesador1Psr/Psr.vhi -module Psr -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Psr.vhd 

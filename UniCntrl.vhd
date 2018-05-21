@@ -63,7 +63,7 @@ begin
 			when "010011" => OutAlu <="010001";--xorcc
 			when "010111" => OutAlu <="010010";--xnorcc
 			when "010110" => OutAlu <="010011";--orncc
-			when others =>OutAlu <="111111";--en caso de otro
+			when others => OutAlu <= "111111";
 		end case;
 	end if;
 end process;

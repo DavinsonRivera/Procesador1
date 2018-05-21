@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Davinson/Downloads/Procesador1-master/nPc.vhd";
+static const char *ng0 = "C:/Users/Davinson/Downloads/Procesador1Psr/nPc.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -61,7 +61,7 @@ LAB3:    t1 = (t0 + 2992);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(45, ng0);
-    t1 = (t0 + 4826);
+    t1 = (t0 + 4798);
     t6 = (t0 + 3072);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
